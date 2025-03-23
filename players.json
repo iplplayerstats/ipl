@@ -1,0 +1,19 @@
+[
+    {
+      "id": "1",
+      "name": "Virat Kohli",
+      "role": "Batsman",
+      "team": "RCB",
+      "last_matches": [45, 30, 50, 80, 20],
+      "image": "virat.jpg"
+    },
+    {
+      "id": "2",
+      "name": "MS Dhoni",
+      "role": "Wicketkeeper",
+      "team": "CSK",
+      "last_matches": [10, 5, 20, 15, 50],
+      "image": "dhoni.jpg"
+    }
+  ]
+  
