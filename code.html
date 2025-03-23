@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        body {
+            background-image: url('bg2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.7;
+            transform: scale(0.8);
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        .swiper-slide-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .player-card {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .player-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .player-info {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 bg-opacity-90 text-white">
+    <div class="container mx-auto p-6">
+        <h1 class="text-6xl font-extrabold text-center mb-6 text-white tracking-wide"> 
+             IPL Match Details 
+        </h1>
+        
+        
+        
+        <h2 class="text-3xl font-semibold text-center mb-4">KKR vs RCB</h2>
+        <div class="flex justify-center space-x-6 mb-8">
+            <a href="#team1" class="relative px-8 py-4 rounded-xl text-white font-bold text-lg tracking-wide border-2 border-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text hover:text-black transition duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 before:rounded-xl before:-z-10 before:opacity-50 hover:before:opacity-100">
+                🔍 Analyze Team 1
+            </a>
+            <a href="#team2" class="relative px-8 py-4 rounded-xl text-white font-bold text-lg tracking-wide border-2 border-transparent bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text hover:text-black transition duration-300 before:absolute before:inset-0 before:bg-gradient-to-r before:from-red-500 before:to-orange-500 before:rounded-xl before:-z-10 before:opacity-50 hover:before:opacity-100">
+                🔍 Analyze Team 2
+            </a>
+        </div>
+        
+        
+
+        <h1 id="team1" class="text-4xl font-bold text-center mb-6">🏏 Team 1 Players 🏏</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Virat Kohli</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 45, 30, 50, 80, 20</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Rohit Sharma</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 60, 25, 70, 15, 90</p>
+                    </div>
+                </div>
+                <!-- Add more players -->
+            </div>
+        </div>
+
+        <h1 id="team2" class="text-4xl font-bold text-center mt-12 mb-6">🏏 Team 2 Players 🏏</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide player-card">
+                    <img src="https://source.unsplash.com/250x350/?cricket,player3" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">David Warner</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 75, 20, 55, 40, 30</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                <div class="swiper-slide player-card">
+                    <img src="virat.jpg" alt="Player Image">
+                    <div class="player-info">
+                        <h2 class="text-xl font-semibold">Steve Smith</h2>
+                        <p>Batsman</p>
+                        <p>Last 5 Matches: 30, 40, 60, 50, 20</p>
+                    </div>
+                </div>
+                
+                <!-- Add more players -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+</body>
+</html>
+587dc25a-3e79-43a9-b347-954a456ba68d
