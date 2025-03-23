@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Details</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: rgb(23, 216, 226);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background: rgb(201, 234, 227);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .player-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 10%;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto 20px auto;
+        }
+        .player-name {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px; 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .player-details p {
+            font-size: 1.2em;
+            background: rgba(104, 228, 199, 0.918);
+            padding: 20px;
+            border-radius: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="playerImage" class="player-image"></div>
+        <h1 class="player-name" id="playerName"></h1>
+        <div class="player-details">
+            <p id="playerRole"></p>
+            <p id="playerTeam"></p>
+            <p id="playerMatches"></p>
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const playerId = urlParams.get("id");
+        fetch("players.json")
+            .then(response => response.json())
+            .then(players => {
+                const player = players.find(p => p.id == playerId);
+                if (!player) {
+                    document.body.innerHTML = "<h2>Player not found</h2>";
+                    return;
+                }
+                document.getElementById("playerImage").style.backgroundImage = `url(${player.image})`;
+                document.getElementById("playerName").textContent = player.name;
+                document.getElementById("playerRole").textContent = "Role: " + player.role;
+                document.getElementById("playerTeam").textContent = "Team: " + player.team;
+                document.getElementById("playerMatches").textContent = "Last Matches: " + player.last_matches.join(", ");
+            })
+            .catch(error => {
+                console.error("Error loading player data", error);
+            });
+    </script>
+</body>
+</html>
